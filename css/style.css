@@ -1,0 +1,36 @@
+header {
+  background-color: #ececec;
+}
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo-first {
+  color: #2196f3;
+}
+.logo-second {
+  color: #000000;
+}
+.navigate {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.navigate-portfolio:hover.navigate-portfolio:focus {
+  color: #2196f3;
+}
+ul {
+  list-style: none;
+}
