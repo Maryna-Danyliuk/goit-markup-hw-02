@@ -1,3 +1,7 @@
+html {
+  background: #e5e5e5;
+}
+/* Header */
 header {
   background-color: #ececec;
 }
@@ -16,7 +20,8 @@ header {
 .logo-second {
   color: #000000;
 }
-.navigate {
+
+.navigate a {
   text-decoration: none;
   list-style: none;
   font-family: 'Roboto';
@@ -25,12 +30,77 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #212121;
 }
-.navigate-portfolio:hover.navigate-portfolio:focus {
+.navigate-stydio:hover a {
+  color: #2196f3;
+}
+.navigate-portfolio:hover a {
+  color: #2196f3;
+}
+.navigate-contact:hover a {
   color: #2196f3;
 }
 ul {
   list-style: none;
+}
+.contacts a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+.contacts-email:hover a {
+  color: #2196f3;
+}
+.contacts-tel:hover a {
+  color: #2196f3;
+}
+
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
+.adress-map a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+.adress-email a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff99;
+
+  text-decoration: none;
+}
+.adress-tel a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff99;
+  text-decoration: none;
+}
+.logo-third {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
