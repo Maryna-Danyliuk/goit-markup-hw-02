@@ -1,207 +1,194 @@
 body {
-  background: white;
+  background: var(--background-color);
+  font-family: Roboto sans-serif;
+  font-style: normal;
+}
+:root {
+  --background-color: #ffffff;
+  --navigate-link-color: #212121;
+  --navigate-contacts-color: #757575;
+  --logo-first-part-color-blue: #2196f3;
+  --logo-second-part-color-black: #000000;
+  --footer-addres-color: #ffffff99;
+  --add-service-background-color: #2f303a;
+  --header-line-color: #ececec;
+  --background-team-color: #f5f4fa;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Header */
-header {
-  background-color: #ececec;
-}
 .logo {
   text-decoration: none;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .logo-first {
-  color: #2196f3;
+  color: var(--logo-first-part-color-blue);
 }
 .logo-second {
-  color: #000000;
+  color: var(--logo-second-part-color-black);
 }
-
 .navigate a {
   text-decoration: none;
   list-style: none;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-.navigate-stydio:hover a {
-  color: #2196f3;
-}
-.navigate-portfolio:hover a {
-  color: #2196f3;
-}
-.navigate-contact:hover a {
-  color: #2196f3;
+  color: var(--navigate-link-color);
 }
 ul {
   list-style: none;
 }
 .contacts a {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--navigate-contacts-color);
 }
-.contacts-email:hover a {
-  color: #2196f3;
-}
-.contacts-tel:hover a {
-  color: #2196f3;
+.hover-link:hover a,
+.hover-link:focus a {
+  color: var(--logo-first-part-color-blue);
 }
 /* Main */
 /* Add service */
 .add-service {
-  background-color: #2f303a;
+  background-color: var(--add-service-background-color);
 }
 .add-sevice-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 .add-service-button {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--background-color);
+  background-color: var(--logo-first-part-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 /* Benefits */
 .benefits-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--navigate-link-color);
 }
 .benefits-text {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--navigate-contacts-color);
 }
 /* Activity */
 .activity-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--navigate-link-color);
 }
 /* Team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-team-color);
 }
 .team-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--navigate-link-color);
 }
 .team-name {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--navigate-link-color);
 }
 .team-proffesion {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--navigate-contacts-color);
 }
 
 /* Portfolio */
 .button-filter {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--navigate-link-color);
+  cursor: pointer;
 }
 .project {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--navigate-link-color);
 }
 .type-project {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--navigate-contacts-color);
 }
 
 /* Footer */
 footer {
-  background-color: #2f303a;
+  background-color: var(--add-service-background-color);
+  font-style: normal;
+  font-family: 'Roboto';
 }
 .adress-map a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
-
+  color: var(--background-color);
   text-decoration: none;
 }
 .adress-email a {
@@ -209,26 +196,27 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #ffffff99;
+  line-height: 1.71;
+  color: var(--footer-addres-color);
 
   text-decoration: none;
 }
 .adress-tel a {
+  font-family: inherit;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #ffffff99;
+  line-height: 1.71;
+  color: var(--footer-addres-color);
+
   text-decoration: none;
 }
 .logo-third {
   font-family: 'Raleway';
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  line-height: 1.19;
+  color: var(--background-color);
 }
