@@ -14,6 +14,7 @@ body {
   --header-line-color: #ececec;
   --background-team-color: #f5f4fa;
   --background-portfolio-list-color: #eeeeee;
+  --hover-add-service-btn-background: #188ce8;
 }
 .visually-hidden {
   position: absolute;
@@ -97,7 +98,17 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.add-service-button:hover,
+.add-service-button:focus {
+  background-color: var(--hover-add-service-btn-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* Benefits */
+.benefits-hover:hover,
+.benefits-hover:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -112,7 +123,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--navigate-contacts-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /* Activity */
 .activity-title {
@@ -163,6 +173,11 @@ ul {
   letter-spacing: 0.03em;
   color: var(--navigate-link-color);
   cursor: pointer;
+}
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--background-color);
+  background-color: var(--logo-first-part-color-blue);
 }
 .project {
   font-weight: 700;
