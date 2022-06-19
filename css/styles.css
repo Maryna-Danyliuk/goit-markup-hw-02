@@ -1,11 +1,13 @@
 body {
   background: var(--background-color);
+  color: var(--main-font-color);
   font-family: Roboto, sans-serif;
-  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 :root {
   --background-color: #ffffff;
-  --navigate-link-color: #212121;
+  --main-font-color: #212121;
   --navigate-contacts-color: #757575;
   --logo-first-part-color-blue: #2196f3;
   --logo-second-part-color-black: #000000;
@@ -39,7 +41,6 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .logo-first {
   color: var(--logo-first-part-color-blue);
@@ -48,23 +49,18 @@ a {
   color: var(--logo-second-part-color-black);
 }
 .navigate a {
-  /* text-decoration: none; */
   list-style: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--navigate-link-color);
 }
 ul {
   list-style: none;
 }
 .contacts a {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--navigate-contacts-color);
 }
 .hover-link:hover a,
@@ -86,6 +82,7 @@ ul {
   color: var(--background-color);
 }
 .add-service-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -95,33 +92,24 @@ ul {
   letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--logo-first-part-color-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  cursor: pointer;
 }
 .add-service-button:hover,
 .add-service-button:focus {
   background-color: var(--hover-add-service-btn-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 /* Benefits */
-.benefits-hover:hover,
-.benefits-hover:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--navigate-link-color);
 }
 .benefits-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--navigate-contacts-color);
 }
 /* Activity */
@@ -130,8 +118,6 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--navigate-link-color);
 }
 /* Team */
 .team {
@@ -142,24 +128,18 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--navigate-link-color);
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--navigate-link-color);
 }
 .team-proffesion {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--navigate-contacts-color);
 }
 
@@ -170,8 +150,6 @@ ul {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--navigate-link-color);
   cursor: pointer;
 }
 .button-filter:hover,
@@ -184,13 +162,12 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--navigate-link-color);
+  color: var(--main-font-color);
 }
 .type-project {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88px;
-  letter-spacing: 0.03em;
   color: var(--navigate-contacts-color);
 }
 
