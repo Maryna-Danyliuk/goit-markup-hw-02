@@ -7,7 +7,7 @@
   --footer-addres-color: #ffffff99;
   --add-service-background-color: #2f303a;
   --header-line-color: #ececec;
-  --background-team-color: #f5f4fa;
+  --background-btn-color: #f5f4fa;
   --background-portfolio-list-color: #eeeeee;
   --hover-add-service-btn-background: #188ce8;
 }
@@ -53,6 +53,7 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--main-font-color);
 }
 ul {
   list-style: none;
@@ -146,11 +147,13 @@ ul {
 /* Portfolio */
 .button-filter {
   font-family: inherit;
+  letter-spacing: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
+  background-color: var(--background-btn-color);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -167,7 +170,7 @@ ul {
 .type-project {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.88;
   color: var(--navigate-contacts-color);
 }
 
